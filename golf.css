@@ -1,0 +1,68 @@
+@import url('https://stockfont.org/?adf097fd40dc669e46d79081e6a5b4aace554b630f82b2cffb827c07d99ef570');
+
+* {margin: 0; padding: 0;}
+body {background-color: #AEC7BA; font-family: 'Oxygen-Regular';
+	display: grid;
+  grid-template-columns: 10% 70% 20%;
+    grid-template-rows: auto;
+	grid-template-areas: "header header header"
+	"img img aside"
+	". main aside"
+	"footer footer footer";
+}
+
+h1 { font-family: 'Anton', cursive; margin: 0.4em 0;}
+aside h1 a {color: white;}
+
+header h1 {color: #142E25; text-shadow: 2px 2px 2px white; text-align: center;}
+
+aside ul {font-size: 0.7em;}
+aside li a {color: #ddd;}
+body > section {grid-area: img; height: 20vh; background-position: center center;
+	background-image: url(images/randombanner.php);
+	max-height: 300px;
+	background-position: center center;}
+header a { color: white; text-decoration: none; }
+
+header address {float: right; color: white; font-style: normal; padding: 1em;}
+main {min-height: 20vh; grid-area: main; padding: 5vw; background-color: #E8E8E8;}
+
+header {background-color: #5CAD00; grid-area: header;}
+
+main h1, main a {color: #4A7061;}
+aside {background-color: #142E25; min-height: 20px; grid-area: aside; padding: 1vw; color: white;}
+aside ul {list-style-type: none; margin-bottom: 1em;}
+aside li {padding-left: 20px;}
+aside > ul > li {font-size: 2em;}
+aside > ul > li > ul {font-size: 0.5em;}
+aside a {color: #333; text-decoration: none}
+footer {color: white; padding: 1em; background-color: black; font-size: 0.7em; grid-area: footer;}
+
+header ul {align-self: center; display: grid; grid-template-columns: auto auto auto; grid-template-rows: auto; color: white; list-style-type: none;}
+header > ul > li {font-size: 2em; cursor: pointer; text-align: center;}
+header ul li ul { margin-left: 10vw; text-align: left; display: none; position: absolute; background-color: #142E25; padding: 20px;}
+header ul li ul li {padding: 1vw;}
+header ul li:hover ul {display: block;}
+
+h1 {font-weight: bold; margin-bottom: 1em;}
+
+p {margin-top: 0.5em; margin-bottom: 0.5em;}
+
+
+h2 {margin-top: 0.5em;  margin-bottom: 0.5em;}
+form label, form input, form textarea {margin-top: 1em; margin-bottom: 1em ;box-sizing: border-box;  display: block; width: 46%; padding: 2%; float: left;}
+form textarea {height: 400px;}
+form input[type="submit"] {margin-left: 46%;}
+form {overflow: auto;}
+form label {clear: left;}
+
+.comments, .reviews {list-style-type: none;}
+.comments li, .reviews li {padding: 2em;}
+.comments li:nth-child(odd), .reviews li:nth-child(odd) {background-color: #fff;}
+.comments li:nth-child(even), .reviews li:nth-child(even) {background-color: #AEC7BA;}
+.reviews li:nth-child(even) a {color: #333;}
+.price { text-align: right; color: darkgreen; font-family: 'Audiowide'; font-weight: bold; font-size: 2em;}
+
+.reviews .details {text-align: right;}
+
+h4 {margin-top: 1em; margin-bottom: 1em;}
